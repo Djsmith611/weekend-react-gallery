@@ -16,14 +16,16 @@ Round 1
     [x] pg
     [x] pool variable
     [x] export pool
-[] Create GET path
+[x] Create GET path
     [x] get * order by id
+[x] Create PUT path
+    [x] update table descriptions
+    
 [] Create POST path (TO BE IMPLEMENTED LATER)
     [] insert into table
-[] Create PUT path
-    [] update table descriptions
 [] Create DELETE path (TO BE IMPLEMENTED LATER)
     [] delete by id
+    
 ~CLIENT~
     ~COMPONENTS~
         ~App~

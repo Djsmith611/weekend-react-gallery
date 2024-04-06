@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
       res.status(200).send(result.rows);
     })
     .catch((err) => {
-      console.error(err);
+      console.error("ERROR in GET ROUTE",err);
       res.sendStatus(500);
     });
 });
@@ -27,7 +27,21 @@ router.post('/', (req,res) => {
 
 // PUT 
 router.put('/like/:id', (req, res) => {
-  
+  const itemId = req.params.id;
+  const queryText = `
+    UPDATE "gallery"
+    SET "likes" = likes + 1
+    WHERE "id" = $1;
+  `;
+  pool
+    .query(queryText, [itemId])
+    .then((result) => {
+      res.sendStatus(200);
+    })
+    .catch((err) => {
+      console.error("ERROR in PUT ROUTE", err);
+      res.sendStatus(500);
+    });
 });
 
 // DELETE
