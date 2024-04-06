@@ -17,7 +17,7 @@ Round 1
     [x] pool variable
     [x] export pool
 [] Create GET path
-    [] get * order by id
+    [x] get * order by id
 [] Create POST path (TO BE IMPLEMENTED LATER)
     [] insert into table
 [] Create PUT path
