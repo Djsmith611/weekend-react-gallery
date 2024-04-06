@@ -40,8 +40,8 @@ Round 1
             [x] Link GalleryItemDisplay
             [x] Link GalleryItemLikesDisplay
         ~GalleryItemDisplay~
-        ~GalleryItemLikesDisplay~
-            [] Link PUT route
+        ~GalleryItemLikes~
+            [x] Link PUT route
         ~Header~
             [x] Header Content
         ~Footer~

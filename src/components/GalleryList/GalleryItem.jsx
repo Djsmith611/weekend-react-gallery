@@ -5,7 +5,7 @@ function GalleryItem({item, loadGallery}) {
     return(
         <div className="GalleryItem">
             <GalleryItemDisplay item={item} />
-            <GalleryItemLikes likes={item.likes} loadGallery={loadGallery} />
+            <GalleryItemLikes likes={item.likes} id={item.id} loadGallery={loadGallery} />
         </div>
     );
 }
