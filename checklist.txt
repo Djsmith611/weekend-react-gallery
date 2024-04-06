@@ -1,17 +1,17 @@
 Round 1
 ~Server~
-[] Create server.js
+[x] Create server.js
     ~VARIABLES~
-    [] Express
-    [] App
-    [] router
-    [] port
+    [x] Express
+    [x] App
+    [x] router
+    [x] port
     ~MIDDLEWARE~
-    [] json
+    [x] json
     ~EXPRESS ROUTES~
-    [] api/router
+    [x] api/router
     ~START SERVER~
-    [] function
+    [x] function
 [] Create pool
     [] pg
     [] pool variable
