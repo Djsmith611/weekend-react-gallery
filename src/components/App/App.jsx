@@ -1,4 +1,5 @@
 import GalleryList from "../GalleryList/GalleryList.jsx";
+import Footer from "../Footer/Footer.jsx";
 
 function App() {
     return (

@@ -25,13 +25,13 @@ Round 1
     [] insert into table
 [] Create DELETE path (TO BE IMPLEMENTED LATER)
     [] delete by id
-    
+
 ~CLIENT~
     ~COMPONENTS~
         ~App~
-            [] Link GalleryList
+            [x] Link GalleryList
             [] Link Header
-            [] Link Footer
+            [x] Link Footer
         ~GalleryList~
             [] Link GET route
             [] Link GalleryItem
