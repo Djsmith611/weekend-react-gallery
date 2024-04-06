@@ -37,8 +37,8 @@ Round 1
             [x] Link GalleryItem
             [x] Map over GalleryItem using GET
         ~GalleryItem~
-            [] Link GalleryItemDisplay
-            [] Link GalleryItemLikesDisplay
+            [x] Link GalleryItemDisplay
+            [x] Link GalleryItemLikesDisplay
         ~GalleryItemDisplay~
         ~GalleryItemLikesDisplay~
             [] Link PUT route

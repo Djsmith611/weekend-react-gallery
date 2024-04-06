@@ -4,8 +4,8 @@ import GalleryItemLikes from "./GalleryItemLikes.jsx";
 function GalleryItem({item, loadGallery}) {
     return(
         <div className="GalleryItem">
-            <GalleryItemDisplay/>
-            <GalleryItemLikes/>
+            <GalleryItemDisplay item={item} />
+            <GalleryItemLikes likes={item.likes} loadGallery={loadGallery} />
         </div>
     );
 }
