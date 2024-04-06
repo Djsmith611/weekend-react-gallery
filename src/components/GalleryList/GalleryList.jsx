@@ -25,7 +25,7 @@ function GalleryList() {
         <div className="GalleryList">
             {
                 gallery.map((item) => (
-                    <GalleryItem item={item}/>
+                    <GalleryItem item={item} loadGallery={loadGallery} />
                 ))
             }
         </div>
