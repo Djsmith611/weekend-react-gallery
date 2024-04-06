@@ -1,0 +1,52 @@
+Round 1
+~Server~
+[] Create server.js
+    ~VARIABLES~
+    [] Express
+    [] App
+    [] router
+    [] port
+    ~MIDDLEWARE~
+    [] json
+    ~EXPRESS ROUTES~
+    [] api/router
+    ~START SERVER~
+    [] function
+[] Create pool
+    [] pg
+    [] pool variable
+    [] export pool
+[] Create GET path
+    [] get * order by id
+[] Create POST path (TO BE IMPLEMENTED LATER)
+    [] insert into table
+[] Create PUT path
+    [] update table descriptions
+[] Create DELETE path (TO BE IMPLEMENTED LATER)
+    [] delete by id
+~CLIENT~
+    ~COMPONENTS~
+        ~App~
+            [] Link GalleryList
+            [] Link Header
+            [] Link Footer
+        ~GalleryList~
+            [] Link GET route
+            [] Link GalleryItem
+            [] Map over GalleryItem using GET
+        ~GalleryItem~
+            [] Link GalleryItemDisplay
+            [] Link GalleryItemLikesDisplay
+        ~GalleryItemDisplay~
+        ~GalleryItemLikesDisplay~
+            [] Link PUT route
+        ~Header~
+            [] Header Content
+        ~Footer~
+            [] Footer Content
+Round 2
+~EditMode~
+~POST & Form & DELETE~
+Round 3
+~MUI~
+
