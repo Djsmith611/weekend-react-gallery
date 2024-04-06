@@ -34,7 +34,7 @@ Round 1
             [x] Link Footer
         ~GalleryList~
             [] Link GET route
-            [] Link GalleryItem
+            [x] Link GalleryItem
             [] Map over GalleryItem using GET
         ~GalleryItem~
             [] Link GalleryItemDisplay
@@ -45,7 +45,7 @@ Round 1
         ~Header~
             [x] Header Content
         ~Footer~
-            [] Footer Content
+            [x] Footer Content
 Round 2
 ~EditMode~
 ~POST & Form & DELETE~
