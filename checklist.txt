@@ -43,7 +43,7 @@ Round 1
         ~GalleryItemLikesDisplay~
             [] Link PUT route
         ~Header~
-            [] Header Content
+            [x] Header Content
         ~Footer~
             [] Footer Content
 Round 2
