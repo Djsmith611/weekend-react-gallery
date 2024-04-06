@@ -33,9 +33,9 @@ Round 1
             [] Link Header
             [x] Link Footer
         ~GalleryList~
-            [] Link GET route
+            [x] Link GET route
             [x] Link GalleryItem
-            [] Map over GalleryItem using GET
+            [x] Map over GalleryItem using GET
         ~GalleryItem~
             [] Link GalleryItemDisplay
             [] Link GalleryItemLikesDisplay
