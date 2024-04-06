@@ -12,10 +12,10 @@ Round 1
     [x] api/router
     ~START SERVER~
     [x] function
-[] Create pool
-    [] pg
-    [] pool variable
-    [] export pool
+[x] Create pool
+    [x] pg
+    [x] pool variable
+    [x] export pool
 [] Create GET path
     [] get * order by id
 [] Create POST path (TO BE IMPLEMENTED LATER)
