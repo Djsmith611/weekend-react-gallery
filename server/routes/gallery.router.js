@@ -26,11 +26,11 @@ router.post('/', (req,res) => {
 })
 
 // PUT 
-router.put('/like/:id', (req, res) => {
+router.put('/:id', (req, res) => {
   const itemId = req.params.id;
   const queryText = `
     UPDATE "gallery"
-    SET "likes" = likes + 1
+    SET "likes" = "likes" + 1
     WHERE "id" = $1;
   `;
   pool

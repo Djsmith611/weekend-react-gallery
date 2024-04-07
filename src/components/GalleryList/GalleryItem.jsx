@@ -10,7 +10,7 @@ function GalleryItem({item, loadGallery}) {
             <GalleryItemHeader item={item} />
             <GalleryItemImage item={item} />
             <GalleryItemDescription item={item} />
-            <GalleryItemLikes likes={item.likes} id={item.id} loadGallery={loadGallery} />
+            <GalleryItemLikes item={item} loadGallery={loadGallery} />
         </Card>
     );
 }

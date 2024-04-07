@@ -1,9 +1,12 @@
 import axios from "axios";
+import CardActions from '@mui/material/CardActions';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import IconButton from '@mui/material/IconButton';
 
-function GalleryItemLikes({ likes, id, loadGallery }) {
-    const likeItem = (itemId) => {
+function GalleryItemLikes({ item, loadGallery }) {
+    const likeItem = (id) => {
         axios
-            .put(`api/gallery/${itemId}`)
+            .put(`api/gallery/${id}`)
             .then((response) => {
                 loadGallery();
             })
@@ -14,12 +17,15 @@ function GalleryItemLikes({ likes, id, loadGallery }) {
     }
 
     return(
-        <div className="GalleryItemLikes">
-            <span>Likes:{likes}</span>
-            <button onClick={() => {
-                likeItem(id);
-            }} >Like</button>
-        </div>
+        <CardActions>
+            <IconButton 
+                onClick={() => {
+                    likeItem(item.id);
+                }} >
+                <FavoriteIcon />
+            </IconButton>
+            <span>Likes:{item.likes}</span>
+        </CardActions>
     );
 }
 
