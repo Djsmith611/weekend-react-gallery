@@ -1,12 +1,15 @@
-import GalleryItemDisplay from "./GalleryItemDisplay.jsx";
+import GalleryItemHeader from "./GalleryItemHeader.jsx";
+import GalleryItemImage from "./GalleryItemImage.jsx";
 import GalleryItemLikes from "./GalleryItemLikes.jsx";
+import Card from '@mui/material/Card';
 
 function GalleryItem({item, loadGallery}) {
     return(
-        <div className="GalleryItem">
-            <GalleryItemDisplay item={item} />
+        <Card sx={{width:'10%'}}>
+            <GalleryItemHeader item={item} />
+            <GalleryItemImage item={item} />
             <GalleryItemLikes likes={item.likes} id={item.id} loadGallery={loadGallery} />
-        </div>
+        </Card>
     );
 }
 
