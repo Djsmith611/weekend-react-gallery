@@ -22,7 +22,7 @@ function GalleryList() {
     }, [])
 
     return(
-        <div className="GalleryList">
+        <div className="GalleryList" data-testid="galleryList">
             {
                 gallery.map((item) => (
                     <GalleryItem item={item} loadGallery={loadGallery} />

@@ -8,7 +8,7 @@ import '@fontsource/roboto/700.css';
 
 function App() {
     return (
-      <div>
+      <div data-testid="app">
         <Header/>
         <GalleryList/>
         <Footer/>
