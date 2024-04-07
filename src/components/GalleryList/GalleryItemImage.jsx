@@ -1,11 +1,10 @@
 import CardMedia from '@mui/material/CardMedia';
-function GalleryItemImage({item, toggleDescription}) {
+function GalleryItemImage({item}) {
     return(
         <CardMedia
         component="img"
         image={item.url}
         alt={item.title}
-        onClick={toggleDescription}
       />
     )
 }

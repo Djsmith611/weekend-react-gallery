@@ -3,6 +3,7 @@ import GalleryItemImage from "./GalleryItemImage.jsx";
 import GalleryItemDescription from "./GalleryItemDescription.jsx";
 import GalleryItemLikes from "./GalleryItemLikes.jsx";
 import Card from '@mui/material/Card';
+import Box from '@mui/material/Box';
 import { useState } from "react";
 
 function GalleryItem({item, loadGallery}) {
@@ -13,16 +14,18 @@ function GalleryItem({item, loadGallery}) {
     return(
         <Card sx={{width:'20%'}} data-testid="galleryItem" minHeight="300px" >
             <GalleryItemHeader item={item} />
+            <Box height="200px" data-testid="toggle" onClick={toggleDescription}>
             {
                 !isDescription && (
-                    <GalleryItemImage item={item} data-testid="toggle" toggleDescription={toggleDescription} />
+                    <GalleryItemImage item={item} />
                 )
             }
             {
                 isDescription && (
-                    <GalleryItemDescription item={item} data-testid="toggle" toggleDescription={toggleDescription} />
+                    <GalleryItemDescription item={item} />
                 )
             }
+            </Box>
             <GalleryItemLikes item={item} loadGallery={loadGallery} />
         </Card>
     );

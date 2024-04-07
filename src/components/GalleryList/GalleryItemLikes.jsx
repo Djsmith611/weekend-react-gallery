@@ -2,6 +2,7 @@ import axios from "axios";
 import CardActions from '@mui/material/CardActions';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import IconButton from '@mui/material/IconButton';
+import Chip from '@mui/material/Chip';
 
 function GalleryItemLikes({ item, loadGallery }) {
     const likeItem = (id) => {
@@ -17,14 +18,14 @@ function GalleryItemLikes({ item, loadGallery }) {
     }
 
     return(
-        <CardActions>
+        <CardActions sx={{ marginTop:3}}>
             <IconButton 
                 onClick={() => {
                     likeItem(item.id);
                 }} >
                 <FavoriteIcon />
             </IconButton>
-            <span>Likes:{item.likes}</span>
+            <Chip label={item.likes} />
         </CardActions>
     );
 }

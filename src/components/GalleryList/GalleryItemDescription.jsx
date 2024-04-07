@@ -1,10 +1,10 @@
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
-function GalleryItemDescription({item, toggleDescription}) {
+function GalleryItemDescription({item}) {
     return(
-        <CardContent onClick={toggleDescription} >
-            <Typography variant="body2" color="text.secondary" height="201px" >
+        <CardContent>
+            <Typography variant="body2" color="text.secondary" >
                 {item.description}
             </Typography>
         </CardContent>
