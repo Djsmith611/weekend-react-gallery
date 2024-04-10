@@ -1,9 +1,14 @@
+import { Box, Typography } from "@mui/material";
+
 function Footer() {
-    return(
-        <footer>
-            <p>David Smith</p>
-        </footer>
-    );
+  return (
+    <Box sx={{
+        padding:1,
+        textAlign:"center",
+    }}>
+      <Typography variant="h5">David Smith</Typography>
+    </Box>
+  );
 }
 
 export default Footer;

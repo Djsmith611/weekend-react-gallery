@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import {Box} from '@mui/material';
 import axios from "axios";
 import GalleryItem from "./GalleryItem.jsx";
-import Box from '@mui/material/Box';
+
 
 function GalleryList() {
     const [gallery, setGallery] = useState([]);
@@ -28,14 +29,16 @@ function GalleryList() {
             my={4}
             flexWrap="wrap"
             display="flex"
-            justifyContent="flex-start"
+            justifyContent="center"
             alignItems="center"
             gap={4}
             p={2}
+            backgroundColor="#82b1ff"
+            margin={0}
             >
             {
                 gallery.map((item) => (
-                    <GalleryItem item={item} loadGallery={loadGallery} />
+                    <GalleryItem key={item.id} item={item} loadGallery={loadGallery} />
                 ))
             }
         </Box>

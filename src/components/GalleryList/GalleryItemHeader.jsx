@@ -1,18 +1,17 @@
-import CardHeader from '@mui/material/CardHeader';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
-import IconButton from '@mui/material/IconButton';
+import { CardHeader, IconButton } from "@mui/material";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
 
-function GalleryItemHeader({item}) {
-    return(
-        <CardHeader 
-            title={item.title}
-            action={
-                <IconButton>
-                  <MoreVertIcon />
-                </IconButton>
-              }
-            />
-    )
+function GalleryItemHeader({ item }) {
+  return (
+    <CardHeader
+      title={item.title}
+      action={
+        <IconButton>
+          <MoreVertIcon />
+        </IconButton>
+      }
+    />
+  );
 }
 
 export default GalleryItemHeader;
