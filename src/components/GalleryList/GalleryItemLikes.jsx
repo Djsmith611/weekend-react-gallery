@@ -22,7 +22,7 @@ function GalleryItemLikes({ item, loadGallery }) {
           likeItem(item.id);
         }}
       >
-        <FavoriteIcon />
+        <FavoriteIcon data-testid="like" />
       </IconButton>
       <Chip label={item.likes} />
     </CardActions>
