@@ -1,23 +1,9 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import {Box} from '@mui/material';
-import axios from "axios";
 import GalleryItem from "./GalleryItem.jsx";
 
 
-function GalleryList() {
-    const [gallery, setGallery] = useState([]);
-
-    const loadGallery = () => {
-        axios
-            .get("api/gallery")
-            .then((response) => {
-                setGallery(response.data);
-            })
-            .catch((err) => {
-                console.error("ERROR in GET CLIENT",err);
-                alert("Something went wrong!");
-            });
-    }
+function GalleryList({loadGallery, gallery}) {
 
     useEffect(() => {
         loadGallery();

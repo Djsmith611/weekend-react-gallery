@@ -13,13 +13,18 @@ function GalleryItem({ item, loadGallery }) {
     setIsDescription(!isDescription);
   };
   return (
-    <Card sx={{ width: "20%" }} data-testid="galleryItem" height="300px">
+    <Card sx={{ 
+      width: "20%",
+      height: "60vh",
+     }} data-testid="galleryItem" >
       <GalleryItemHeader item={item} />
-      <Box height="10%" data-testid="toggle" onClick={toggleDescription}>
+      <Box sx={{
+        height:"40vh"
+      }} data-testid="toggle" onClick={toggleDescription}>
         {!isDescription && <GalleryItemImage item={item} />}
         {isDescription && <GalleryItemDescription item={item} />}
-        <GalleryItemLikes item={item} loadGallery={loadGallery} />
       </Box>
+      {!isDescription && <GalleryItemLikes item={item} loadGallery={loadGallery} />}
     </Card>
   );
 }

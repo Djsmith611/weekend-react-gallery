@@ -1,6 +1,9 @@
-import { Box, Typography } from "@mui/material";
+import { Box, IconButton, Stack, Typography } from "@mui/material";
+import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
 
-function Header() {
+
+
+function Header({ toggleEdit }) {
   return (
     <Box
       sx={{
@@ -12,16 +15,21 @@ function Header() {
         color:"white",
       }}
     >
-      <Typography
+      <Stack direction="row" spacing={125} >
+        <Typography
         variant="h1"
         sx={{
           textAlign: "center",
           marginBottom: 0,
         }}
         gutterBottom
-      >
+        >
         David's Gallery
-      </Typography>
+        </Typography>
+        <IconButton onClick={() => {toggleEdit()}}>
+          <AddAPhotoIcon sx={{color:"white"}} />
+        </IconButton>
+      </Stack>
     </Box>
   );
 }

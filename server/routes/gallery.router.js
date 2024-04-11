@@ -22,7 +22,22 @@ router.get('/', (req, res) => {
 
 // POST
 router.post('/', (req,res) => {
-
+  const photo = req.body;
+  const queryText = `
+    INSERT INTO "gallery"
+    ("url", "title", "description")
+    VALUES
+    ($1, $2, $3)
+  `;
+  pool
+    .query(queryText, [photo.url, photo.title, photo.description])
+    .then((result) => {
+      res.sendStatus(201);
+    })
+    .catch((err) => {
+      console.error(err);
+      res.sendStatus(500);
+    })
 })
 
 // PUT 
