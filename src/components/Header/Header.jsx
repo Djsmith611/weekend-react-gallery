@@ -6,6 +6,7 @@ function Header() {
       sx={{
         padding: 0,
         paddingTop: 2,
+        paddingBottom: 4,
         marginBottom: 0,
         backgroundColor:"black",
         color:"white",
@@ -19,7 +20,7 @@ function Header() {
         }}
         gutterBottom
       >
-        My Gallery
+        David's Gallery
       </Typography>
     </Box>
   );
