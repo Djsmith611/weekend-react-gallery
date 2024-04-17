@@ -1,5 +1,5 @@
 /* IMPORT STATEMENTS */
-import { GalleryList, Footer, Header, EditForm } from "../../index.jsx";
+import { GalleryList, Footer, Header, EditForm } from "../../index.jsx"; // Check index.jsx for more information
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
