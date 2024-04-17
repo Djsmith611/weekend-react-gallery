@@ -1,15 +1,18 @@
+/* IMPORT STATEMENTS */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './components/App/App.jsx';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <React.StrictMode>
+const root = ReactDOM.createRoot(document.getElementById('root')); // React entry point
+
+root.render( // Renders React components on the DOM
+    <React.StrictMode> {/* Wrapper */}
         <App />
     </React.StrictMode>
 );
 
+/* Export statements for App components for simplified import statements */
 export { default as GalleryItemHeader } from './components/GalleryList/GalleryItemHeader.jsx';
 export { default as GalleryItemImage } from './components/GalleryList/GalleryItemImage.jsx';
 export { default as GalleryItemDescription } from './components/GalleryList/GalleryItemDescription.jsx';
