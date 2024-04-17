@@ -40,6 +40,7 @@ function GalleryItemHeader({ item, loadGallery }) {
       })
       .catch((err) => { // Error message
         console.error(err);
+        alert("Something bad happened.");
       });
   }
   return (

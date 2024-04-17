@@ -4,15 +4,19 @@ import axios from "axios";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
 /**
- * Like 
+ * "footer" for Card component
  * @param {*} props passed from GalleryItem
- * @returns 
+ * @returns like button and like count for given item
  */
 function GalleryItemLikes({ item, loadGallery }) {
-  const likeItem = (id) => {
+  /**
+   * 
+   * @param {*} id for item
+   */
+  const likeItem = () => {
     axios
-      .put(`api/gallery/like/${id}`)
-      .then((response) => {
+      .put(`api/gallery/like/${item.id}`)
+      .then((res) => {
         loadGallery();
       })
       .catch((err) => {
@@ -25,7 +29,7 @@ function GalleryItemLikes({ item, loadGallery }) {
     <CardActions sx={{ marginTop: 3 }}>
       <IconButton
         onClick={() => {
-          likeItem(item.id);
+          likeItem();
         }}
       >
         <FavoriteIcon data-testid="like" />
