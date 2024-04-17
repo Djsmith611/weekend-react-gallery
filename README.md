@@ -83,6 +83,6 @@ This project is a web-based image gallery application. The image data is stored 
 - Click the `Submit Photo` button to add the data to your database.
 - Click the `Heart Button` on a gallery image to add to the like count.
 - Click the `three dots` button to reveal the delete button for a gallery image.
-- Click `The trash icon` to remove an image.
+- Click `Delete` to remove an image.
 
 [Back to Top](#top)
