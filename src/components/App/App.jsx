@@ -18,7 +18,7 @@ function App() {
    * Loads Gallery data from database
    */
   const loadGallery = () => {
-    // Axios call to communicate with server
+    /* Axios call to submit a GET request to server */
     axios
       .get("api/gallery")
       .then((response) => {
