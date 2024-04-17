@@ -41,7 +41,7 @@ router.post('/', (req,res) => {
 })
 
 // PUT 
-router.put('/:id', (req, res) => {
+router.put('/like/:id', (req, res) => {
   const itemId = req.params.id;
   const queryText = `
     UPDATE "gallery"
@@ -60,7 +60,20 @@ router.put('/:id', (req, res) => {
 });
 
 // DELETE
-router.delete('/like/:id', (req, res) => {
-  
+router.delete('/:id', (req, res) => {
+  const itemId = req.params.id;
+  const queryText = `
+    DELETE FROM "gallery"
+    WHERE "id" = $1;
+  `;
+  pool
+    .query(queryText, [itemId])
+    .then((result) => {
+      res.sendStatus(200);
+    })
+    .catch((err) => {
+      console.error(err);
+      res.sendStatus(500);
+    });
 });
 module.exports = router;

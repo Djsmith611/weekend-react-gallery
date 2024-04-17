@@ -17,7 +17,7 @@ function GalleryItem({ item, loadGallery }) {
       width: "20%",
       height: "60vh",
      }} data-testid="galleryItem" >
-      <GalleryItemHeader item={item} />
+      <GalleryItemHeader item={item} loadGallery={loadGallery} />
       <Box sx={{
         height:"40vh"
       }} data-testid="toggle" onClick={toggleDescription}>

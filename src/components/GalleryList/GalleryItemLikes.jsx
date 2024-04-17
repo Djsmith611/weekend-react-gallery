@@ -5,7 +5,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 function GalleryItemLikes({ item, loadGallery }) {
   const likeItem = (id) => {
     axios
-      .put(`api/gallery/${id}`)
+      .put(`api/gallery/like/${id}`)
       .then((response) => {
         loadGallery();
       })
