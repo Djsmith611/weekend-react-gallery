@@ -2,9 +2,9 @@
 import { CardContent, Typography } from "@mui/material";
 
 /**
- * "footer" for Card displays
+ * description for Card displays
  * @param {*} item prop passed from GalleryItem component
- * @returns like button and like count for given item
+ * @returns card description to be conditionally rendered
  */
 function GalleryItemDescription({ item }) {
   return (

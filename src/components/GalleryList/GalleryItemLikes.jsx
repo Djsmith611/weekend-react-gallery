@@ -1,7 +1,13 @@
+/* IMPORT STATEMENTS */
 import { CardActions, IconButton, Chip } from "@mui/material";
 import axios from "axios";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
+/**
+ * Like 
+ * @param {*} props passed from GalleryItem
+ * @returns 
+ */
 function GalleryItemLikes({ item, loadGallery }) {
   const likeItem = (id) => {
     axios
