@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 
 function EditForm({ isEdit, toggleEdit, loadGallery }) {
+    /* INPUT VARIABLES */
     const [title, setTitle] = useState('');
     const [url, setUrl] = useState('');
     const [description, setDescription] = useState('');
